@@ -1,0 +1,134 @@
+
+.sotial-icon{
+  font-size: 60px;
+}
+.sotial-icon a{
+  color:white;
+}
+
+.sotial-icon :hover {
+  font-size: 100px;
+}
+.sotial-icon a{
+  margin-left: 20px;
+}
+
+.Logo img {
+  margin-right: 10%;
+  margin-top: 40px;
+  width: 100px;
+}
+.Logo{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 14vh;
+}
+/*sty haupt div home*/
+.home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  /*style div content*/
+  .headerContainer {
+    width: auto;
+    margin-left: 50px;
+  }
+  
+  .headerContainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    height: 60px;
+    color: wheat;
+    font-weight: 600;
+  }
+  
+  .headerContainer p {
+    padding: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-weight: 20;
+    color: white;
+  }
+  
+  
+  @media (max-width: 650px) {
+  
+    .sotial-icon{
+      font-size: 40px;
+      color:white;
+    }
+
+    .Logo{
+      display: flex;
+    justify-content: center;
+    height: 100%;
+    height: 13vh;
+    }
+
+    .Logo img{
+    margin-left: 8px;
+  }
+
+    .headerContainer {
+      margin-left: 0px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+  
+    .headerContainer h1 {
+      font-size: 55px;
+      height: 10px;
+      color: white;
+    }
+  
+    .headerContainer p {
+      font-size: 30px;
+      color: white;
+    }
+
+    @media (width: 280px) {
+    
+      .headerContainer {
+        margin-left: 0px;
+        width: 100%;
+       
+      
+      }
+      .headerContainer h1 {
+        margin-left: 15px;
+        width: 100%;
+        font-size: 40px;
+       height: 60%;
+        
+      }
+    
+      .headerContainer p {
+        margin: 0 0 20px 0;
+        width: 100%;
+        font-size: 20px;
+        height: 90%;
+       
+      }
+
+      .sotial-icon{
+      font-size: 40px;
+      color:white;
+    }
+
+    }
+
+
+  }

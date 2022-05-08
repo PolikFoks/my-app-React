@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+  }
+  .fa{
+    font-size: 20px;
+    margin-left: 40px;
+    color: wheat; /* Цвет обычной ссылки */
+    line-height: 2;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.fa:after {
+    background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.fa:hover:after,
+.fa:focus:after {
+    width: 100%;
+}
+  @media (max-width: 650px) {
+    .footer{
+      padding: 0;
+    }
+
+    .fa{
+      font-size: 15px;
+      margin-left: 20px;
+    }
+  }

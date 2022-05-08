@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Footer from "./Components/Footer";
+import Home from "./pages/Home";
+import BannerImage from "../src/asseta/gros.jpg";
+import "./App.css"
+
 
 function App() {
+  var bg = [
+    'rgba(255,0,0,0.3)',
+    'rgba(0,255,0,0.3)',
+    'rgba(0,0,255,0.3)'
+  ];
+
+  
+  var br2 =
+  bg[Math.floor(Math.random() * (bg.length + 1))];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className='test' 
+      style={{ backgroundImage: `url(${BannerImage})`}}>
+        <div className="colorT"  style={{backgroundColor: br2}}>
+   <Home />
+   <Footer />
+   </div>
     </div>
+  </div>
+
   );
 }
 
